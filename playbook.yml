@@ -1,0 +1,8 @@
+- hosts: exemplo
+  remote_user: ansible
+  become: yes
+  roles:
+  - server
+  - php
+  - mysql
+  - wordpress
