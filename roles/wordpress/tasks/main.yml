@@ -10,13 +10,6 @@
     src=/tmp/wordpress.tar.gz 
     dest=/var/www/ 
     copy=no
-# - name: Modifica permissao pasta wordpress
- #  file:
- #   path: /var/www/wordpress
- #   owner: analista
- #   group: www-data
- #   mode: "0755"
- #   recurse: yes
  - name: Atualiza o site Apache padrao
    lineinfile:
     dest=/etc/apache2/sites-enabled/000-default.conf
